@@ -18,3 +18,138 @@
 body {
     background-color: var(--eye-ball);
 }
+
+/* General Styling */
+
+a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: var(--lead);
+}
+
+li {
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.between {
+    justify-content: space-between;
+}
+
+.gap-2 {
+    gap: 2rem;
+}
+
+.gap-3 {
+    gap: 3rem;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+    padding-inline: 1.5rem;
+}
+
+/* end of General Styling */
+
+/* Header */
+
+header nav {
+    min-height: 8vh;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+
+.btn {
+    font-size: 1.1rem;
+    background-color: var(--gold-finger);
+    color: var(--pure-white);
+    display: inline-block;
+    padding: .9rem 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--lead);
+}
+
+header .hamburger-icon {
+    font-size: 1.5rem;
+    display: none;
+}
+
+header .cart-icon {
+    position: relative;
+    font-size: 1.3rem;
+    color: var(--lead);
+}
+
+header .cart-icon span {
+    position: absolute;
+    top: 50%;
+    right: -10px;
+    font-size: 0.85rem;
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 99px;
+    background-color: var(--gold-finger);
+    color: var(--pure-white);
+    text-align: center;
+    line-height: 20px;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+/* end of Header */
+
+
+/* >>> Media Query <<< */
+
+@media screen and (max-width: 780px) {
+    header nav :where(.desktop-menu, .btn) {
+        display: none !important;
+    }
+
+    header .hamburger-icon {
+        display: block !important;
+    }
+
+    .mobile-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        position: absolute;
+        top: 20%;
+        left: -100%;
+        transform: translateX(-50%);
+        width: 20rem;
+        background-color: var(--pure-white);
+        border: .15rem solid var(--gold-finger);
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.05), 8px 8px 8px rgba(0, 0, 0, 0.05) inset;
+        transition: 0.5s ease-in-out;
+    }
+
+    .mobile-menu.active {
+        left: 50%;
+    }
+
+    .mobile-menu .btn {
+        display: block !important;
+    }
+}
