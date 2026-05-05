@@ -54,6 +54,13 @@ li {
     padding-inline: 1.5rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
 /* end of General Styling */
 
 /* Header */
@@ -115,6 +122,52 @@ header .cart-icon span {
 /* end of Header */
 
 
+/* Hero */
+section .hero-sec {
+    min-height: calc(100vh - 8vh);
+}
+
+.hero-sec :where(.content, .img-container) {
+    flex: 1;
+}
+
+.hero-sec h1 {
+    font-size: 5.6vw;
+    color: var(--lead);
+}
+
+.hero-sec h1 span {
+    color: var(--gold-finger);
+}
+
+.hero-sec p {
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin-block: 2rem;
+    max-width: 550px;
+}
+
+.hero-sec .social-icon {
+    background-color: var(--hint-yellow);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    text-align: center;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+.hero-sec .social-icon:hover {
+    background-color: var(--lead);
+    color: var(--pure-white);
+}
+
+/* end of Hero */
+
 /* >>> Media Query <<< */
 
 @media screen and (max-width: 780px) {
@@ -151,5 +204,34 @@ header .cart-icon span {
 
     .mobile-menu .btn {
         display: block !important;
+    }
+
+    section .hero-sec {
+        flex-direction: column;
+        padding-top: 1.5rem;
+    }
+
+    .hero-sec h1 {
+        font-size: 3.6rem;
+    }
+
+    .hero-sec .content {
+        margin-bottom: 2rem;
+    }
+
+    section .hero-sec .gap-2 {
+        gap: 1rem;
+    }
+
+    section .hero-sec .btn {
+        font-size: 1rem;
+        padding: .5rem;
+        border-radius: 1rem;
+    }
+
+    .hero-sec .social-icon {
+        width: 2.25rem;
+        font-size: 1rem;
+        line-height: 2.25rem;
     }
 }
