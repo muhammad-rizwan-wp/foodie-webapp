@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/css/style.css">
 </head>
 
@@ -55,6 +56,7 @@
 
     <!-- MAIN -->
     <main>
+        <!-- HERO -->
         <section>
             <div class="wrapper hero-sec flex">
                 <div class="content">
@@ -73,12 +75,170 @@
                 </div>
             </div>
         </section>
+        <!-- SERVICES -->
+        <section>
+            <div class="wrapper our-services py-50">
+                <div class="intro">
+                    <h5>Our Services</h5>
+                    <h2>How does it work?</h2>
+                </div>
+                <div class="services-card">
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="/assets/img/easy-to-order.png" alt="Easy to Order">
+                        </div>
+                        <h3>Easy to Order</h3>
+                        <p>You only need a few steps in the ordering food.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="/assets/img/fast-delivery.png" alt="Fast Delivery">
+                        </div>
+                        <h3>Fast Delivery</h3>
+                        <p>Delivery that is always ontime even faster.</p>
+                    </div>
+                    <div class="card">
+                        <div class="img-box">
+                            <img src="/assets/img/best-quality.png" alt="Best Quality">
+                        </div>
+                        <h3>Best Quality</h3>
+                        <p>Not only fast for us in quality is also number one.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MENU -->
+        <section>
+            <div class="wrapper py-50">
+                <div class="intro">
+                    <h5>Our Menu</h5>
+                    <h2>The Most Popular</h2>
+                </div>
+
+                <div class="our-menu">
+                    <div class="menu-card">
+                        <div class="img-col">
+                            <img src="/assets/img/burger.png" alt="Menu Image">
+                        </div>
+                        <h4>Double Beef Burger</h4>
+                        <h4 class="price">$200</h4>
+                        <a href="#" class="btn">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- REVIEW -->
+        <section>
+            <div class="wrapper reviews py-50 flex gap-2">
+                <div class="img-col">
+                    <img src="/assets/img/delivery-boy-with-phone.png" alt="Delivery Boy with Phone">
+                </div>
+                <div class="review">
+                    <div class="intro">
+                        <h5>Customer Review</h5>
+                        <h2>What They Say?</h2>
+                    </div>
+
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="profile flex gap-2">
+                                    <div class="avater">
+                                        <img src="/assets/img/profile1.jpeg" alt="Customer Profile">
+                                    </div>
+                                    <div>
+                                        <h4>John Doe</h4>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Foodie is the best. Besides the many delicious meals, the service is also very
+                                    good, espacially very fast delivery. I
+                                    highly recommend Foodie to you.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile flex gap-2">
+                                    <div class="avater">
+                                        <img src="/assets/img/profile2.jpeg" alt="Customer Profile">
+                                    </div>
+                                    <div>
+                                        <h4>Anderson</h4>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Fresh ingredients, creative menu, and warm service make this spot a hidden gem.
+                                    Perfect for casual dinners or special nights out. Truly a foodie's paradise!.</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="profile flex gap-2">
+                                    <div class="avater">
+                                        <img src="/assets/img/profile3.jpeg" alt="Customer Profile">
+                                    </div>
+                                    <div>
+                                        <h4>Smith</h4>
+                                        <div class="rating">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>Delicious dishes, cozy ambiance, and exceptional service. A must-visit for food
+                                    lovers seeking bold flavors and unforgettable dining experiences. Highly
+                                    recommended, every bite delights!</p>
+                            </div>
+                        </div>
+                        <div class="navigatio-icon flex between">
+                            <div class="arrow">
+                                <a href="#" class="prev">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                            <div class="arrow">
+                                <a href="#" class="next">
+                                    <i class="fa-solid fa-arrow-left"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER -->
     <footer></footer>
 
     <script src="/script/app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            navigation: {
+                nextEl: ".next",
+                prevEl: ".prev",
+            },
+        });
+    </script>
 </body>
 
 </html>
