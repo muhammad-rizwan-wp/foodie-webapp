@@ -336,6 +336,158 @@ section .hero-sec {
 
 /* end of Review */
 
+/* APP-PROMOTION */
+
+:where(.promotion) {
+    padding: 3rem 6rem;
+    background-color: var(--hint-yellow);
+    border-radius: 2rem;
+}
+
+.promotion :where(.banner-img, .content) {
+    flex: 1;
+}
+
+:where(.promotion) .banner-img img {
+    width: 25rem;
+}
+
+:where(.promotion) .intro {
+    padding-bottom: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+:where(.promotion) .intro p {
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+/* end of APP-PROMOTION */
+
+/* NEWSLETTER */
+:where(.newsletter) .intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+:where(.newsletter) .intro p {
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+}
+
+:where(.newsletter) .newsletter-form {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0.8rem;
+    background-color: var(--pure-white);
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+}
+
+:where(.newsletter) .newsletter-form label {
+    flex: 1;
+}
+
+:where(.newsletter) .newsletter-form input {
+    width: 100%;
+    height: 3rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+}
+
+:where(.newsletter) .newsletter-form input:focus {
+    outline: none;
+}
+
+/* end of NEWSLETTER */
+
+/* FOOTER */
+footer {
+    background-color: var(--hint-yellow);
+    padding: 2rem 1rem;
+}
+
+footer .wrapper {
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+footer .flex-col {
+    flex: 1;
+}
+
+footer .ft-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--gold-finger);
+}
+
+footer .btn {
+    width: fit-content;
+}
+
+footer p {
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.8rem;
+    font-weight: 400;
+    margin: 1rem 0;
+}
+
+footer .social-icon {
+    background-color: var(--pure-white);
+    width: 3rem;
+    aspect-ratio: 1;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    text-align: center;
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1);
+    transition: .3s ease-in-out;
+}
+
+footer .social-icon:hover {
+    background-color: var(--lead);
+    color: var(--pure-white);
+}
+
+footer h4 {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    color: var(--lead);
+    margin-bottom: 0.75rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+footer ul li a {
+    font-size: 1.1rem;
+    color: gray;
+    transition: 0.25s ease-in-out;
+}
+
+footer ul li a:hover {
+    color: var(--lead);
+    font-weight: bold;
+}
+
+/* end of FOOTER */
+
 /* >>> Media Query <<< */
 
 @media screen and (max-width: 780px) {
@@ -441,5 +593,70 @@ section .hero-sec {
     :where(.reviews) .navigatio-icon {
         margin-top: 2rem;
     }
+
+    /* APP-PROMOTION */
+
+    section:has(.promotion) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    :where(.promotion) {
+        flex-direction: column;
+    }
+
+    :where(.promotion) .banner-img img {
+        width: 15rem;
+    }
+
+    :where(.promotion) .intro h2 {
+        font-size: 3rem;
+    }
+
+    /* end of APP-PROMOTION */
+
+    /* NEWSLETTER */
+
+    :where(.newsletter) .intro h2 {
+        font-size: 3rem;
+    }
+
+    :where(.newsletter) .newsletter-form input {
+        font-size: 0.85rem;
+        padding-left: 0.5rem;
+    }
+
+    /* end of NEWSLETTER */
+
+    /* FOOTER */
+    :where(footer) .wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    :where(footer) .wrapper .flex-col:first-child {
+        grid-column: 1 / -1;
+    }
+
+    footer .ft-social {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    footer .btn {
+        width: fit-content;
+        padding: 0.75rem;
+        border-radius: 0.75rem;
+        font-size: 1rem;
+    }
+
+    footer .social-icon {
+        width: 2.5rem;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        line-height: 2.5rem;
+    }
+
+    /* end of FOOTER */
 
 }
