@@ -257,6 +257,115 @@ section .hero-sec {
     color: var(--gold-finger);
 }
 
+/* CART */
+
+:where(.cart-tab) {
+    position: fixed;
+    width: 100%;
+    max-width: 25rem;
+    padding-block: 2rem;
+    background-color: var(--hint-yellow);
+    inset: 0 0 0 auto;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+:where(.cart-tab) .title h4 {
+    font-size: 2rem;
+}
+
+:where(.cart-tab) .item-list {
+    flex: 1;
+    width: 100%;
+}
+
+:where(.cart-tab) .item-list .item:nth-child(even) {
+    background-color: var(--pure-white);
+}
+
+:where(.cart-tab) .item-list .item:nth-child(odd) {
+    background-color: var(--hint-yellow);
+}
+
+:where(.cart-tab) .item-list .item {
+    gap: 1rem;
+    justify-content: space-between;
+    padding: 0.7rem 1rem;
+}
+
+:where(.cart-tab) .item-list img {
+    width: 5rem;
+}
+
+
+:where(.cart-tab) .item-list .content h4 {
+    font-size: 1.3rem;
+    color: var(--lead);
+}
+
+:where(.cart-tab) .buttons {
+    display: flex;
+    align-items: center;
+}
+
+:where(.cart-tab) .buttons a {
+    background-color: var(--lead);
+    color: var(--pure-white);
+    width: 1.7rem;
+    aspect-ratio: 1;
+    line-height: 1.7rem;
+    text-align: center;
+    border-radius: 99px;
+}
+
+:where(.cart-tab) .buttons span {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-inline: 0.6rem;
+}
+
+:where(.cart-tab) .price-box {
+    width: 100%;
+    text-align: center;
+    background-color: var(--gold-finger);
+    padding-block: 1rem;
+}
+
+:where(.cart-tab) .price-box h4 {
+    display: inline-block;
+    color: var(--pure-white);
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+:where(.cart-tab) .price-box span {
+    font-size: 1.3rem;
+    color: var(--pure-white);
+    font-weight: 400;
+}
+
+:where(.cart-tab) .button-box {
+    gap: 1rem;
+}
+
+:where(.cart-tab) .button-box .btn {
+    background-color: var(--lead);
+    border-radius: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    transition: 0.3s ease-in-out;
+}
+
+:where(.cart-tab) .button-box .btn:hover {
+    background-color: var(--gold-finger);
+    color: var(--lead);
+}
+
+/* end of CART */
+
 /* end of Our Menu */
 
 /* Review */
@@ -592,6 +701,14 @@ footer ul li a:hover {
 
     :where(.reviews) .navigatio-icon {
         margin-top: 2rem;
+    }
+
+    :where(.cart-tab) {
+        width: 100%;
+    }
+
+    :where(.cart-tab) .item-list .content h4 {
+        font-size: 1rem;
     }
 
     /* APP-PROMOTION */
